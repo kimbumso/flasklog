@@ -1,0 +1,119 @@
+2021-07-02 00:05:15,568 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:05:15,569 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:05:48,932 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:05:49,287 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:05:49,288 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:05:58,393 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:05:58,829 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:05:58,829 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:06:00,925 INFO werkzeug Thread-2 : 127.0.0.1 - - [02/Jul/2021 00:06:00] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2021-07-02 00:06:01,014 INFO werkzeug Thread-3 : 127.0.0.1 - - [02/Jul/2021 00:06:01] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-07-02 00:06:01,015 INFO werkzeug Thread-4 : 127.0.0.1 - - [02/Jul/2021 00:06:01] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-07-02 00:06:01,068 INFO werkzeug Thread-5 : 127.0.0.1 - - [02/Jul/2021 00:06:01] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-07-02 00:14:18,539 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:14:18,873 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:14:18,873 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:14:31,020 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:14:31,431 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:14:31,432 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:14:32,460 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:14:32,801 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:14:32,801 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:15:03,148 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:15:03,500 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:15:03,500 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:15:18,674 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:15:19,160 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:15:19,161 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:15:33,333 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:15:33,713 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:15:33,714 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:16:05,079 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:16:05,437 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:16:05,437 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:16:19,621 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:16:19,937 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:16:19,937 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:16:36,490 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-02 00:16:36,496 INFO werkzeug MainThread :  * Restarting with stat
+2021-07-02 00:16:36,771 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:16:36,772 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:16:48,081 ERROR tdm Thread-2 : [2021-Jul-02 00:16] 127.0.0.1 GET http /test? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/views.py", line 83, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/bumso/flask-restful/api.py", line 44, in get
+    len(data)
+TypeError: object of type 'NoneType' has no len()
+
+2021-07-02 00:16:48,101 INFO werkzeug Thread-2 : 127.0.0.1 - - [02/Jul/2021 00:16:48] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2021-07-02 00:16:48,186 INFO werkzeug Thread-4 : 127.0.0.1 - - [02/Jul/2021 00:16:48] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-07-02 00:16:48,189 INFO werkzeug Thread-3 : 127.0.0.1 - - [02/Jul/2021 00:16:48] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-07-02 00:16:48,236 INFO werkzeug Thread-5 : 127.0.0.1 - - [02/Jul/2021 00:16:48] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-07-02 00:18:12,845 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:18:12,888 INFO werkzeug MainThread :  * Restarting with stat
+2021-07-02 00:18:13,227 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:18:13,228 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:18:28,415 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:18:28,454 INFO werkzeug MainThread :  * Restarting with stat
+2021-07-02 00:18:28,773 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:18:28,774 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:18:29,800 INFO werkzeug MainThread :  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+2021-07-02 00:18:29,911 INFO werkzeug MainThread :  * Restarting with stat
+2021-07-02 00:18:30,341 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:18:30,342 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:18:32,639 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-02 00:18:32,643 INFO werkzeug MainThread :  * Restarting with stat
+2021-07-02 00:18:32,910 WARNING werkzeug MainThread :  * Debugger is active!
+2021-07-02 00:18:32,910 INFO werkzeug MainThread :  * Debugger PIN: 416-558-611
+2021-07-02 00:18:36,540 ERROR root Thread-2 : [2021-Jul-02 00:18] 127.0.0.1 GET http /test? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/views.py", line 83, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/bumso/flask-restful/api.py", line 44, in get
+    len(data)
+TypeError: object of type 'NoneType' has no len()
+
+2021-07-02 00:18:36,559 INFO werkzeug Thread-2 : 127.0.0.1 - - [02/Jul/2021 00:18:36] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2021-07-02 00:18:36,631 INFO werkzeug Thread-3 : 127.0.0.1 - - [02/Jul/2021 00:18:36] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-07-02 00:18:36,633 INFO werkzeug Thread-4 : 127.0.0.1 - - [02/Jul/2021 00:18:36] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-07-02 00:18:36,694 INFO werkzeug Thread-6 : 127.0.0.1 - - [02/Jul/2021 00:18:36] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+
+
+
+2021-07-02 00:18:48,521 ERROR root Thread-7 : [2021-Jul-02 00:18] 127.0.0.1 GET http /test? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/views.py", line 83, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/bumso/flask-restful/api.py", line 44, in get
+    len(data)
+TypeError: object of type 'NoneType' has no len()
+
+2021-07-02 00:18:48,556 INFO werkzeug Thread-7 : 127.0.0.1 - - [02/Jul/2021 00:18:48] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2021-07-02 00:18:48,689 INFO werkzeug Thread-8 : 127.0.0.1 - - [02/Jul/2021 00:18:48] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-07-02 00:18:48,702 INFO werkzeug Thread-9 : 127.0.0.1 - - [02/Jul/2021 00:18:48] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-07-02 00:18:48,788 INFO werkzeug Thread-10 : 127.0.0.1 - - [02/Jul/2021 00:18:48] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

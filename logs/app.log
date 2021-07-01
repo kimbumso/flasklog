@@ -1,0 +1,16 @@
+[2021-Jul-02 00:16] 127.0.0.1 GET http /test? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/bumso/flask-restful/venv/lib/python3.8/site-packages/flask/views.py", line 83, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/bumso/flask-restful/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/bumso/flask-restful/api.py", line 44, in get
+    len(data)
+TypeError: object of type 'NoneType' has no len()
+

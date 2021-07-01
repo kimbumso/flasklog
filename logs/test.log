@@ -1,0 +1,37 @@
+[2021-07-01 22:34:52,586] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-07-01 22:34:52,589] INFO in _internal:  * Restarting with stat
+[2021-07-01 22:34:52,862] WARNING in _internal:  * Debugger is active!
+[2021-07-01 22:34:52,863] INFO in _internal:  * Debugger PIN: 416-558-611
+[2021-07-01 22:35:02,105] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:02] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+[2021-07-01 22:35:02,206] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:02] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2021-07-01 22:35:02,218] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:02] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2021-07-01 22:35:02,289] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:02] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2021-07-01 22:35:12,140] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:12] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+[2021-07-01 22:35:12,214] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:12] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2021-07-01 22:35:12,226] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:12] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2021-07-01 22:35:12,258] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:12] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2021-07-01 22:35:43,489] INFO in _internal:  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+[2021-07-01 22:35:43,549] INFO in _internal:  * Restarting with stat
+[2021-07-01 22:35:43,938] WARNING in _internal:  * Debugger is active!
+[2021-07-01 22:35:43,939] INFO in _internal:  * Debugger PIN: 416-558-611
+[2021-07-01 22:35:53,314] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:53] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+[2021-07-01 22:35:53,412] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:53] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2021-07-01 22:35:53,412] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:53] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2021-07-01 22:35:53,459] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:35:53] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2021-07-01 22:36:02,212] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-07-01 22:36:02,218] INFO in _internal:  * Restarting with stat
+[2021-07-01 22:36:02,503] WARNING in _internal:  * Debugger is active!
+[2021-07-01 22:36:02,503] INFO in _internal:  * Debugger PIN: 416-558-611
+[2021-07-01 22:36:06,108] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:36:06] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+[2021-07-01 22:36:06,163] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:36:06] "GET /test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2021-07-01 22:36:06,167] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:36:06] "GET /test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2021-07-01 22:36:06,220] INFO in _internal: 127.0.0.1 - - [01/Jul/2021 22:36:06] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2021-07-01 22:37:09,224] INFO in _internal:  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+[2021-07-01 22:37:09,279] INFO in _internal:  * Restarting with stat
+[2021-07-01 22:37:09,561] WARNING in _internal:  * Debugger is active!
+[2021-07-01 22:37:09,562] INFO in _internal:  * Debugger PIN: 416-558-611
+[2021-07-01 22:42:45,362] INFO in _internal:  * Detected change in '/home/bumso/flask-restful/api.py', reloading
+[2021-07-01 22:42:45,436] INFO in _internal:  * Restarting with stat
+[2021-07-01 22:42:46,951] INFO in _internal:  * Restarting with stat
+[2021-07-01 22:43:08,558] INFO in _internal:  * Restarting with stat
+[2021-07-01 22:43:20,060] INFO in _internal:  * Restarting with stat
