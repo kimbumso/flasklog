@@ -5,16 +5,14 @@ from time import strftime
 import os
 
 import logging
-from logging.handlers import RotatingFileHandler
+import logging.config
+import json
 import traceback
 
 
 os.makedirs('./logs', exist_ok=True)
 
 debug = True
-
-logging.basicConfig(filename='logs/record.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
-
 
 app = Flask(__name__)
 api = Api(app)
@@ -32,15 +30,17 @@ def exceptions(e):
     logging.error('%s %s %s %s %s 5xx INTERNAL SERVER ERROR\n%s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, tb)
     return e.status_code
 
+
 class HelloWorld(Resource):
     def get(self):
+        print("fasfdawegawegawegafasggae")
         return {'hello': 'world'}
 
 
 class HelloWorld2(Resource):
     def get(self):
         data = None
-
+        print("test")
         len(data)
 
         app.logger.info('Info level log')
@@ -53,4 +53,9 @@ api.add_resource(HelloWorld2, '/test')
 
 if __name__ == '__main__':
 
+    with open('logger.json', 'r') as f:
+        config = json.load(f)
+    logging.config.dictConfig(config)
+    print(f"logger 시발 {config}")
+    logger = logging.getLogger()
     app.run(debug=debug)

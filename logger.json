@@ -2,36 +2,80 @@
   "version": 1,
   "disable_existing_loggers": false,
   "formatters": {
-    "basic": {
-      "format": "%(asctime)s:%(module)s:%(levelname)s:%(message)s",
-      "datefmt": "%Y-%m-%d %H:%M:%S"
+    "brief": {
+      "class": "logging.Formatter",
+      "style": "{",
+      "datefmt": "%I:%M:%S",
+      "format": "{levelname:8s}; {name:<15s}; {message:s}"
+    },
+    "standard": {
+      "class": "logging.Formatter",
+      "style": "{",
+      "datefmt": "%I:%M:%S",
+      "format": "{levelname:8s}; {asctime:s}; {name:<25s} {funcName:<15s} {lineno:4d}; {message:s}"
+    },
+    "multi-process": {
+      "class": "logging.Formatter",
+      "style": "{",
+      "datefmt": "%I:%M:%S",
+      "format": "{levelname:8s}; {process:5d}; {asctime:s}; {name:<15s} {lineno:4d}; {message:s}"
+    },
+    "multi-thread": {
+      "class": "logging.Formatter",
+      "style": "{",
+      "datefmt": "%I:%M:%S",
+      "format": "{levelname:8s}; {threadName:5d}; {asctime:s}; {name:<15s} {lineno:4d}; {message:s}"
+    },
+    "verbose": {
+      "class": "logging.Formatter",
+      "style": "{",
+      "datefmt": "%I:%M:%S",
+      "format": "{levelname:8s}; {process:5d}; {threadName:8s}; {asctime:s}; {name:<15s} {lineno:4d}; {message:s}"
+    },
+    "multiline": {
+      "class": "logging.Formatter",
+      "style": "{",
+      "datefmt": "%I:%M:%S",
+      "format": "{levelname:8s}\n{process:5d}\n{threadName:8s}\n{asctime:s}\n{name:<15s}{lineno:4d}\n{message:s}\n"
     }
   },
   "handlers": {
-    "console": {
-      "class": "logging.StreamHandler",
-      "level": "INFO",
-      "formatter": "basic"
-    },
-    "file_debug": {
-      "class": "logging.FileHandler",
+    "console":{
       "level": "DEBUG",
-      "formatter": "basic",
-      "filename": "logs/debug.log"
+      "class": "logging.StreamHandler",
+      "formatter": "verbose",
+      "stream" : "ext://sys.stdout"
     },
-    "file_error": {
-      "class": "logging.FileHandler",
-      "level": "ERROR",
-      "formatter": "basic",
-      "filename": "logs/error.log"
+    "file_handler": {
+      "level": "INFO",
+      "class": "logging.handlers.WatchedFileHandler",
+      "formatter": "verbose",
+      "filename": "logs/test.log",
+      "mode": "a",
+      "encoding": "utf-8"
     }
   },
   "loggers": {
-    "__main__": {
+    "mypkg": {
+      "handlers": ["console"],
       "level": "DEBUG",
-      "handlers": ["console", "file_debug", "file_error"],
-      "propagate": true
+      "propagate": false
+    },
+    "elasticsearch": {
+      "handlers": ["console"],
+      "level": "WARNING"
+    },
+    "requests": {
+      "handlers": ["console"],
+      "level": "WARNING"
+    },
+    "sqlalchemy": {
+      "handlers": ["console"],
+      "level": "WARNING"
     }
+  },
+  "root": {
+    "handlers": ["console", "file_handler"],
+    "level": "DEBUG"
   }
 }
-
